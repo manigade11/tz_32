@@ -14,20 +14,44 @@ const QuantumPage = ({ data, loc }) => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const speak = (text) => {
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.rate = 1.0;
+            // Attempt to find a good voice
+            const voices = window.speechSynthesis.getVoices();
+            const preferredVoice = voices.find(v => v.name.includes('Google US English') || v.name.includes('Samantha') || v.lang === 'en-US');
+            if (preferredVoice) utterance.voice = preferredVoice;
+            window.speechSynthesis.speak(utterance);
+        }
+    };
+
     const handleMcqSubmit = (optId) => {
+        if (mcqSolved || isCorrect === false) return; // Prevent spamming
+
         setSelectedOpt(optId);
         if (optId === data.mcq.correctId) {
             setIsCorrect(true);
+
+            // Sound Logic (TTS)
+            if (loc === 5) {
+                speak("Oops! I am a dummy. Find the right one.");
+            } else {
+                speak("Access Granted.");
+            }
+
             setTimeout(() => {
                 setMcqSolved(true);
-                setShowReveal(true); // Trigger overlay
-            }, 1500); // Delay to show success state
+                setShowReveal(true);
+            }, 1000);
         } else {
             setIsCorrect(false);
+            speak("Oh no! That is incorrect.");
             setTimeout(() => {
                 setSelectedOpt(null);
                 setIsCorrect(null);
-            }, 1000); // Reset after shake
+            }, 1000);
         }
     };
 
@@ -55,7 +79,7 @@ const QuantumPage = ({ data, loc }) => {
                     textTransform: 'uppercase',
                     marginBottom: '0.5rem'
                 }}>
-                    QUANTUM NODE 1
+                    QUANTUM NODE 5
                 </div>
                 <h1 style={{
                     fontSize: '2.5rem',
@@ -242,7 +266,18 @@ const QuantumPage = ({ data, loc }) => {
                             background: 'rgba(0,0,0,0.3)'
                         }}
                     >
-                        <strong>System Update:</strong> {data.mcq.successMsg}
+                        <strong>System Update:</strong>{' '}
+                        {data.mcq.successMsg.split(" ").map((word, i) => (
+                            <motion.span
+                                key={i}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: i * 0.1 }} // Fast typewriter effect
+                                style={{ display: "inline-block", marginRight: "0.25em" }}
+                            >
+                                {word}
+                            </motion.span>
+                        ))}
                     </motion.div>
                 )}
             </motion.div>
@@ -335,7 +370,7 @@ const QuantumPage = ({ data, loc }) => {
                                 marginBottom: '1rem',
                                 textTransform: 'uppercase'
                             }}>
-                                QUANTUM NODE 1
+                                QUANTUM NODE 5
                             </h3>
 
                             <motion.div

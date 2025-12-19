@@ -1,7 +1,7 @@
 export const quantumData = {
     1: {
         theme: {
-            color: '#00f3ff', // Cyan
+            color: '#aaffff', // Neon Ice Blue
             bgConfig: { count: 300, speed: 1, activity: 'mixed' }
         },
         title: {
@@ -14,18 +14,18 @@ export const quantumData = {
             { id: "ent", heading: "Entanglement", content: "Entanglement means two particles become connected so that the state of one instantly affects the other, even if they are far apart. This property is key to quantum computing and secure communication.", bgImage: "/entanglement_bg.png" }
         ],
         mcq: {
-            question: "In the famous thought experiment, when is the cat considered both dead and alive?",
+            question: "What phenomenon allows a quantum particle to exist in multiple states simultaneously?",
             options: [
-                { id: 'A', text: "When it is hungry" },
-                { id: 'B', text: "Before the box is opened" },
-                { id: 'C', text: "After observation" },
-                { id: 'D', text: "When it is asleep" }
+                { id: 'A', text: "Gravity" },
+                { id: 'B', text: "Entanglement" },
+                { id: 'C', text: "Superposition" },
+                { id: 'D', text: "Observation" }
             ],
-            correctId: 'B',
-            successMsg: "Observation complete. First Letter detected: F."
+            correctId: 'C',
+            successMsg: "State confirmed. First Letter detected: I."
         },
         hiddenLetter: {
-            char: "F",
+            char: "I",
             hint: "I am the first letter and arguably the most important.",
             position: { top: '20%', right: '10%' },
             revealStyle: "subtle-glow"
@@ -34,7 +34,7 @@ export const quantumData = {
 
     2: {
         theme: {
-            color: '#bc13fe', // Neon Purple
+            color: '#ff4400', // Neon Orange-Red
             bgConfig: { count: 300, speed: 1.5, activity: 'energetic' }
         },
         title: {
@@ -47,15 +47,15 @@ export const quantumData = {
             { id: "q3", heading: "Why Quantum Computing Matters", content: "Quantum computing can solve problems that are very hard for classical computers, such as optimization, drug discovery, cryptography, and AI.", bgImage: "/future_bg.png" }
         ],
         mcq: {
-            question: "How do quantum computers solve complex problems faster than classical computers?",
+            question: "What is the physical device used to manipulate qubits in a quantum computer?",
             options: [
-                { id: 'A', text: "By using more electricity" },
-                { id: 'B', text: "By using larger processors" },
-                { id: 'C', text: "By checking all possibilities at once" },
-                { id: 'D', text: "By increasing clock speed" }
+                { id: 'A', text: "Silicon Chip" },
+                { id: 'B', text: "Vacuum Tube" },
+                { id: 'C', text: "Quantum Gate" },
+                { id: 'D', text: "Flux Capacitor" }
             ],
             correctId: 'C',
-            successMsg: "Processing confirmed. Second Letter detected: L."
+            successMsg: "Processing complete. Second Letter detected: L."
         },
         hiddenLetter: {
             char: "L",
@@ -67,8 +67,8 @@ export const quantumData = {
 
     3: {
         theme: {
-            color: '#ff9900', // Neon Orange
-            bgConfig: { count: 400, speed: 2, activity: 'chaotic' }
+            color: '#9d00ff', // Neon Violet
+            bgConfig: { count: 300, speed: 1.5, activity: 'chaotic' }
         },
         title: {
             main: "Teckzite 2.0 — Quantum Communication",
@@ -80,18 +80,18 @@ export const quantumData = {
             { id: "qc3", heading: "Why It Is Secure", content: "Quantum information cannot be copied (no-cloning principle). This makes quantum communication extremely secure, ideal for banking, defense, and future quantum networks.", bgImage: "/comm_bg_3.png" }
         ],
         mcq: {
-            question: "What happens if an eavesdropper attempts to intercept a QKD message?",
+            question: "What is Quantum Teleportation primarily used for?",
             options: [
-                { id: 'A', text: "The internet connection breaks" },
-                { id: 'B', text: "The quantum state changes and is detected" },
-                { id: 'C', text: "The message deletes itself" },
-                { id: 'D', text: "Nothing, they can read it" }
+                { id: 'A', text: "Time travel" },
+                { id: 'B', text: "Instant food delivery" },
+                { id: 'C', text: "Transporting humans" },
+                { id: 'D', text: "Transferring quantum states" }
             ],
-            correctId: 'B',
-            successMsg: "Security breach averted. Third Letter detected: R."
+            correctId: 'D',
+            successMsg: "Transmission confirmed. Third Letter detected: T."
         },
         hiddenLetter: {
-            char: "R",
+            char: "T",
             hint: "I am the third letter and find my final friend.",
             position: { bottom: '20%', right: '20%' },
             revealStyle: "static"
@@ -100,7 +100,7 @@ export const quantumData = {
 
     4: {
         theme: {
-            color: '#ff0099', // Neon Pink
+            color: '#007fff', // Neon Azure
             bgConfig: { count: 200, speed: 0.5, activity: 'stable' }
         },
         title: {
@@ -113,21 +113,54 @@ export const quantumData = {
             { id: "qs3", heading: "Future Impact", content: "Quantum technology will enable smarter AI, unhackable networks, better healthcare, and advanced scientific discoveries in the coming years.", bgImage: "/sensing_bg_3.png" }
         ],
         mcq: {
-            question: "Which field benefits most from the extreme precision of quantum sensors?",
+            question: "Quantum gravity sensors can detect underground voids by measuring what?",
             options: [
-                { id: 'A', text: "Cooking" },
-                { id: 'B', text: "Medical Imaging (MRI)" },
-                { id: 'C', text: "Textile Manufacturing" },
-                { id: 'D', text: "Social Media" }
+                { id: 'A', text: "Magnetic North" },
+                { id: 'B', text: "Tiny gravitational changes" },
+                { id: 'C', text: "Temperature fluctuations" },
+                { id: 'D', text: "Radio waves" }
             ],
             correctId: 'B',
-            successMsg: "Precision verified. Fourth Letter detected: G."
+            successMsg: "Precision verified. Fourth Letter detected: Z."
         },
         hiddenLetter: {
-            char: "G",
+            char: "Z",
             hint: "I am the fourth letter and complete the word.",
             position: { top: '15%', left: '50%', transform: 'translateX(-50%)' },
             revealStyle: "blaze"
+        }
+    },
+
+    5: {
+        theme: {
+            color: '#bfff00', // Neon Lime
+            bgConfig: { count: 300, speed: 1.2, activity: 'mixed' }
+        },
+        title: {
+            main: "Teckzite 2.0 — Quantum Advantages",
+            sub: "Beyond Classical Limits."
+        },
+        sections: [
+            { id: "q5_1", heading: "How Quantum Sensors Work", content: "Quantum sensors rely on quantum states that are extremely sensitive to external changes. Even a tiny disturbance can be detected with very high precision.", bgImage: "/sensors_bg.png" },
+            { id: "q5_2", heading: "Advantage Over Classical Sensors", content: "Compared to classical sensors, quantum sensors are more accurate, more stable, and capable of detecting very weak signals. This makes them ideal for advanced scientific and industrial use.", bgImage: "/advantage_bg.png" },
+            { id: "q5_3", heading: "Towards a Quantum Future", content: "As quantum technology develops, it will integrate with AI, IoT, 5G/6G, and space systems, creating smarter and more powerful technologies.", bgImage: "/future_tech_bg.png" }
+        ],
+        mcq: {
+            question: "Why are quantum sensors ideal for advanced scientific and industrial use?",
+            options: [
+                { id: 'A', text: "They are cheaper to make" },
+                { id: 'B', text: "They use more electricity" },
+                { id: 'C', text: "They are capable of detecting very weak signals" },
+                { id: 'D', text: "They are larger in size" }
+            ],
+            correctId: 'C',
+            successMsg: "Oops! I am a dummy letter. Search in other QRs."
+        },
+        hiddenLetter: {
+            char: "?",
+            hint: "Oops! I am a dummy letter. Search in other QRs.",
+            position: { top: '30%', right: '20%' },
+            revealStyle: "static"
         }
     }
 };
