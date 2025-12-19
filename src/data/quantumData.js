@@ -129,38 +129,5 @@ export const quantumData = {
             position: { top: '15%', left: '50%', transform: 'translateX(-50%)' },
             revealStyle: "blaze"
         }
-    },
-
-    5: {
-        theme: {
-            color: '#bfff00', // Neon Lime
-            bgConfig: { count: 300, speed: 1.2, activity: 'mixed' }
-        },
-        title: {
-            main: "Teckzite 2.0 — Quantum Advantages",
-            sub: "Beyond Classical Limits."
-        },
-        sections: [
-            { id: "q5_1", heading: "How Quantum Sensors Work", content: "Quantum sensors rely on quantum states that are extremely sensitive to external changes. Even a tiny disturbance can be detected with very high precision.", bgImage: "/sensors_bg.png" },
-            { id: "q5_2", heading: "Advantage Over Classical Sensors", content: "Compared to classical sensors, quantum sensors are more accurate, more stable, and capable of detecting very weak signals. This makes them ideal for advanced scientific and industrial use.", bgImage: "/advantage_bg.png" },
-            { id: "q5_3", heading: "Towards a Quantum Future", content: "As quantum technology develops, it will integrate with AI, IoT, 5G/6G, and space systems, creating smarter and more powerful technologies.", bgImage: "/future_tech_bg.png" }
-        ],
-        mcq: {
-            question: "Why are quantum sensors ideal for advanced scientific and industrial use?",
-            options: [
-                { id: 'A', text: "They are cheaper to make" },
-                { id: 'B', text: "They use more electricity" },
-                { id: 'C', text: "They are capable of detecting very weak signals" },
-                { id: 'D', text: "They are larger in size" }
-            ],
-            correctId: 'C',
-            successMsg: "Oops! I am a dummy letter. Search in other QRs."
-        },
-        hiddenLetter: {
-            char: "?",
-            hint: "Oops! I am a dummy letter. Search in other QRs.",
-            position: { top: '30%', right: '20%' },
-            revealStyle: "static"
-        }
     }
 };

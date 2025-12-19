@@ -12,12 +12,12 @@ function App() {
   const [introDone, setIntroDone] = useState(false);
   const [entered, setEntered] = useState(false);
   const [showRules, setShowRules] = useState(false);
-  const [currentLoc, setCurrentLoc] = useState(5);
+  const [currentLoc, setCurrentLoc] = useState(2);
 
   useEffect(() => {
     // Parse location from URL
     const params = new URLSearchParams(window.location.search);
-    const loc = parseInt(params.get('loc') || '5');
+    const loc = parseInt(params.get('loc') || '2');
     setCurrentLoc(loc);
   }, []);
 

@@ -35,11 +35,7 @@ const QuantumPage = ({ data, loc }) => {
             setIsCorrect(true);
 
             // Sound Logic (TTS)
-            if (loc === 5) {
-                speak("Oops! I am a dummy. Find the right one.");
-            } else {
-                speak("Access Granted.");
-            }
+            speak("Access Granted.");
 
             setTimeout(() => {
                 setMcqSolved(true);
@@ -79,7 +75,7 @@ const QuantumPage = ({ data, loc }) => {
                     textTransform: 'uppercase',
                     marginBottom: '0.5rem'
                 }}>
-                    QUANTUM NODE 5
+                    QUANTUM NODE 3
                 </div>
                 <h1 style={{
                     fontSize: '2.5rem',
@@ -370,7 +366,7 @@ const QuantumPage = ({ data, loc }) => {
                                 marginBottom: '1rem',
                                 textTransform: 'uppercase'
                             }}>
-                                QUANTUM NODE 5
+                                QUANTUM NODE 3
                             </h3>
 
                             <motion.div
