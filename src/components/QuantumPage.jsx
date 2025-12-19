@@ -55,7 +55,7 @@ const QuantumPage = ({ data, loc }) => {
                     textTransform: 'uppercase',
                     marginBottom: '0.5rem'
                 }}>
-                    QUANTUM NODE 3
+                    QUANTUM NODE 1
                 </div>
                 <h1 style={{
                     fontSize: '2.5rem',
@@ -335,7 +335,7 @@ const QuantumPage = ({ data, loc }) => {
                                 marginBottom: '1rem',
                                 textTransform: 'uppercase'
                             }}>
-                                QUANTUM NODE 3
+                                QUANTUM NODE 1
                             </h3>
 
                             <motion.div

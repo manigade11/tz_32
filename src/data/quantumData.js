@@ -14,18 +14,18 @@ export const quantumData = {
             { id: "ent", heading: "Entanglement", content: "Entanglement means two particles become connected so that the state of one instantly affects the other, even if they are far apart. This property is key to quantum computing and secure communication.", bgImage: "/entanglement_bg.png" }
         ],
         mcq: {
-            question: "What phenomenon allows a quantum particle to exist in multiple states simultaneously?",
+            question: "In the famous thought experiment, when is the cat considered both dead and alive?",
             options: [
-                { id: 'A', text: "Gravity" },
-                { id: 'B', text: "Entanglement" },
-                { id: 'C', text: "Superposition" },
-                { id: 'D', text: "Observation" }
+                { id: 'A', text: "When it is hungry" },
+                { id: 'B', text: "Before the box is opened" },
+                { id: 'C', text: "After observation" },
+                { id: 'D', text: "When it is asleep" }
             ],
-            correctId: 'C',
-            successMsg: "State confirmed. First Letter detected: I."
+            correctId: 'B',
+            successMsg: "Observation complete. First Letter detected: F."
         },
         hiddenLetter: {
-            char: "I",
+            char: "F",
             hint: "I am the first letter and arguably the most important.",
             position: { top: '20%', right: '10%' },
             revealStyle: "subtle-glow"

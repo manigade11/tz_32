@@ -40,7 +40,7 @@ const RulesOverlay = ({ isOpen, onClose }) => {
                         <ul style={{ paddingLeft: '1.2rem', color: 'var(--color-text-dim)', lineHeight: '1.6' }}>
                             <li>Explore the campus to find QR codes.</li>
                             <li>Each scanner location reveals a part of the <strong style={{ color: '#fff' }}>4-Letter Password</strong>.</li>
-                            <li>This is the <strong>Third Quantum Node</strong>. Collect them all.</li>
+                            <li>This is the <strong>First Quantum Node</strong>. Collect them all.</li>
                             <li>Report to the main stage for validation.</li>
                         </ul>
                         <button
