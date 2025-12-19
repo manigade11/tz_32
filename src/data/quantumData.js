@@ -80,15 +80,15 @@ export const quantumData = {
             { id: "qc3", heading: "Why It Is Secure", content: "Quantum information cannot be copied (no-cloning principle). This makes quantum communication extremely secure, ideal for banking, defense, and future quantum networks.", bgImage: "/comm_bg_3.png" }
         ],
         mcq: {
-            question: "What is the primary application of Quantum Key Distribution (QKD)?",
+            question: "What happens if an eavesdropper attempts to intercept a QKD message?",
             options: [
-                { id: 'A', text: "Faster video streaming" },
-                { id: 'B', text: "Unbreakable encryption" },
-                { id: 'C', text: "Cheaper internet" },
-                { id: 'D', text: " Wireless charging" }
+                { id: 'A', text: "The internet connection breaks" },
+                { id: 'B', text: "The quantum state changes and is detected" },
+                { id: 'C', text: "The message deletes itself" },
+                { id: 'D', text: "Nothing, they can read it" }
             ],
             correctId: 'B',
-            successMsg: "Security verified. Third Letter detected: R."
+            successMsg: "Security breach averted. Third Letter detected: R."
         },
         hiddenLetter: {
             char: "R",
