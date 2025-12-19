@@ -1,0 +1,42 @@
+:root {
+  /* Quantum Palette */
+  --color-bg-deep: #050510; /* Deep void black */
+  --color-bg-dark: #0a0a1a;
+  
+  --color-neon-cyan: #00f3ff;
+  --color-neon-purple: #bc13fe;
+  --color-neon-blue: #0066ff;
+  
+  --color-text-main: #ffffff;
+  --color-text-dim: #a0a0b0;
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+  --glass-blur: blur(10px);
+
+  /* Animation Speeds */
+  --speed-fast: 0.3s;
+  --speed-normal: 0.6s;
+  --speed-slow: 1.2s;
+}
+
+body {
+  background-color: var(--color-bg-deep);
+  color: var(--color-text-main);
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll from particles */
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-neon-purple);
+  border-radius: 4px;
+}

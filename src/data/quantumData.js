@@ -1,0 +1,133 @@
+export const quantumData = {
+    1: {
+        theme: {
+            color: '#00f3ff', // Cyan
+            bgConfig: { count: 300, speed: 1, activity: 'mixed' }
+        },
+        title: {
+            main: "Teckzite 2.0 — Quantum World",
+            sub: "Explore how reality behaves at the smallest scale."
+        },
+        sections: [
+            { id: "qm", heading: "Quantum Mechanics", content: "Quantum Technology is based on quantum mechanics, which studies the behavior of very small particles like electrons and photons. Unlike classical systems, quantum systems follow probability-based rules.", bgImage: "/mechanics_bg.png" },
+            { id: "sup", heading: "Superposition", content: "In the quantum world, a particle can exist in multiple states at the same time. This concept is called superposition and it allows quantum systems to process more information simultaneously.", bgImage: "/superposition_bg.png" },
+            { id: "ent", heading: "Entanglement", content: "Entanglement means two particles become connected so that the state of one instantly affects the other, even if they are far apart. This property is key to quantum computing and secure communication.", bgImage: "/entanglement_bg.png" }
+        ],
+        mcq: {
+            question: "What phenomenon allows a quantum particle to exist in multiple states simultaneously?",
+            options: [
+                { id: 'A', text: "Gravity" },
+                { id: 'B', text: "Entanglement" },
+                { id: 'C', text: "Superposition" },
+                { id: 'D', text: "Observation" }
+            ],
+            correctId: 'C',
+            successMsg: "State confirmed. First Letter detected: I."
+        },
+        hiddenLetter: {
+            char: "I",
+            hint: "I am the first letter and arguably the most important.",
+            position: { top: '20%', right: '10%' },
+            revealStyle: "subtle-glow"
+        }
+    },
+
+    2: {
+        theme: {
+            color: '#bc13fe', // Neon Purple
+            bgConfig: { count: 300, speed: 1.5, activity: 'energetic' }
+        },
+        title: {
+            main: "Teckzite 2.0 — Quantum Processing",
+            sub: "The power of Qubits."
+        },
+        sections: [
+            { id: "q1", heading: "What is a Qubit?", content: "A qubit is the basic unit of quantum computing. Unlike a classical bit (0 or 1), a qubit can be 0, 1, or both at the same time using superposition.", bgImage: "/qubit_bg.png" },
+            { id: "q2", heading: "Quantum Processing", content: "Quantum computers use quantum gates to control qubits. Because qubits can exist in multiple states, a quantum computer can process many possibilities simultaneously.", bgImage: "/process_bg.png" },
+            { id: "q3", heading: "Why Quantum Computing Matters", content: "Quantum computing can solve problems that are very hard for classical computers, such as optimization, drug discovery, cryptography, and AI.", bgImage: "/future_bg.png" }
+        ],
+        mcq: {
+            question: "How do quantum computers solve complex problems faster than classical computers?",
+            options: [
+                { id: 'A', text: "By using more electricity" },
+                { id: 'B', text: "By using larger processors" },
+                { id: 'C', text: "By checking all possibilities at once" },
+                { id: 'D', text: "By increasing clock speed" }
+            ],
+            correctId: 'C',
+            successMsg: "Processing confirmed. Second Letter detected: L."
+        },
+        hiddenLetter: {
+            char: "L",
+            hint: "I am the second letter and find my other two friends.",
+            position: { top: '50%', left: '15%' },
+            revealStyle: "pulse"
+        }
+    },
+
+    3: {
+        theme: {
+            color: '#ff9900', // Neon Orange
+            bgConfig: { count: 400, speed: 2, activity: 'chaotic' }
+        },
+        title: {
+            main: "Teckzite 2.0 — Quantum Communication",
+            sub: "Secure the Future."
+        },
+        sections: [
+            { id: "qc1", heading: "What is Quantum Communication?", content: "Quantum communication uses quantum states of particles (like photons) to transmit information. It focuses on secure and reliable data transfer using quantum principles.", bgImage: "/comm_bg_1.png" },
+            { id: "qc2", heading: "Quantum Key Distribution (QKD)", content: "QKD allows two users to share a secret key securely. If anyone tries to intercept the message, the quantum state changes, and the attack is immediately detected.", bgImage: "/comm_bg_2.png" },
+            { id: "qc3", heading: "Why It Is Secure", content: "Quantum information cannot be copied (no-cloning principle). This makes quantum communication extremely secure, ideal for banking, defense, and future quantum networks.", bgImage: "/comm_bg_3.png" }
+        ],
+        mcq: {
+            question: "What is the primary application of Quantum Key Distribution (QKD)?",
+            options: [
+                { id: 'A', text: "Faster video streaming" },
+                { id: 'B', text: "Unbreakable encryption" },
+                { id: 'C', text: "Cheaper internet" },
+                { id: 'D', text: " Wireless charging" }
+            ],
+            correctId: 'B',
+            successMsg: "Security verified. Third Letter detected: R."
+        },
+        hiddenLetter: {
+            char: "R",
+            hint: "I am the third letter and find my final friend.",
+            position: { bottom: '20%', right: '20%' },
+            revealStyle: "static"
+        }
+    },
+
+    4: {
+        theme: {
+            color: '#ff0099', // Neon Pink
+            bgConfig: { count: 200, speed: 0.5, activity: 'stable' }
+        },
+        title: {
+            main: "Teckzite 2.0 — Quantum Sensing",
+            sub: "Precision beyond limits."
+        },
+        sections: [
+            { id: "qs1", heading: "What is Quantum Sensing?", content: "Quantum sensing uses quantum effects to measure very small changes in time, gravity, magnetic fields, and motion with extreme accuracy.", bgImage: "/sensing_bg_1.png" },
+            { id: "qs2", heading: "Where It Is Used", content: "Quantum sensors are used in medical imaging, GPS and navigation, space research, and environment monitoring, where high precision is required.", bgImage: "/sensing_bg_2.png" },
+            { id: "qs3", heading: "Future Impact", content: "Quantum technology will enable smarter AI, unhackable networks, better healthcare, and advanced scientific discoveries in the coming years.", bgImage: "/sensing_bg_3.png" }
+        ],
+        mcq: {
+            question: "Which field benefits most from the extreme precision of quantum sensors?",
+            options: [
+                { id: 'A', text: "Cooking" },
+                { id: 'B', text: "Medical Imaging (MRI)" },
+                { id: 'C', text: "Textile Manufacturing" },
+                { id: 'D', text: "Social Media" }
+            ],
+            correctId: 'B',
+            successMsg: "Precision verified. Fourth Letter detected: G."
+        },
+        hiddenLetter: {
+            char: "G",
+            hint: "I am the fourth letter and complete the word.",
+            position: { top: '15%', left: '50%', transform: 'translateX(-50%)' },
+            revealStyle: "blaze"
+        }
+    }
+};
